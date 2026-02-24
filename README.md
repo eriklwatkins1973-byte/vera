@@ -38,3 +38,5 @@ By enforcing a strict **Verify & Shred** entry protocol, Vera enables 100% human
 - [Revenue Architecture](docs/revenue-architecture.md)
 - [Strategic IP & Regulatory Compliance Whitepaper](docs/strategic-ip-regulatory-compliance-whitepaper.md)
 - [Technical & Operational Transition Guide](docs/technical-operational-transition-guide.md)
+- [Strategic Value & Regulatory Moat](docs/strategic-value-regulatory-moat.md)
+- [The "Born-Compliant" Advantage](docs/born-compliant-advantage.md)
