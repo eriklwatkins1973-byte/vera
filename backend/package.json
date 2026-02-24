@@ -1,0 +1,13 @@
+{
+  "name": "vera-backend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "verifyAndShred.js",
+  "type": "commonjs",
+  "scripts": {
+    "check": "node -e \"require('./verifyAndShred')\""
+  },
+  "dependencies": {
+    "stripe": "^18.0.0"
+  }
+}

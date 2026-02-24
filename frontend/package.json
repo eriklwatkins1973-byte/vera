@@ -1,0 +1,12 @@
+{
+  "name": "vera-mobile",
+  "version": "1.0.0",
+  "description": "The Sovereign Adult Social Network - Assets for Sale",
+  "dependencies": {
+    "react": "18.x",
+    "react-native": "0.7x.x",
+    "@stripe/stripe-react-native": "^0.3x.x",
+    "@stripe/stripe-identity-react-native": "^0.x.x",
+    "axios": "^1.x.x"
+  }
+}
