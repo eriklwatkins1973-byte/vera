@@ -40,3 +40,42 @@ By enforcing a strict **Verify & Shred** entry protocol, Vera enables 100% human
 - [Technical & Operational Transition Guide](docs/technical-operational-transition-guide.md)
 - [Strategic Value & Regulatory Moat](docs/strategic-value-regulatory-moat.md)
 - [The "Born-Compliant" Advantage](docs/born-compliant-advantage.md)
+
+
+## 🔧 Backend API Quickstart
+
+Run the backend API:
+
+```bash
+cd backend
+npm install
+VIDEO_TOKEN=your_mux_token npm start
+```
+
+Health check:
+
+```bash
+curl -s http://localhost:3000/health
+```
+
+Upload a clip (returns playback ID):
+
+```bash
+curl -s -X POST http://localhost:3000/api/video/upload \
+  -H "Content-Type: application/json" \
+  -d '{
+    "filePath": "https://storage.example.com/uploads/clip.mp4",
+    "userId": "user_123"
+  }'
+```
+
+Schedule 24-hour shred unless saved:
+
+```bash
+curl -s -X POST http://localhost:3000/api/video/schedule-shred \
+  -H "Content-Type: application/json" \
+  -d '{
+    "assetId": "asset_abc123",
+    "isSaved": false
+  }'
+```

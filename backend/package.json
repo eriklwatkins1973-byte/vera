@@ -2,12 +2,15 @@
   "name": "vera-backend",
   "version": "0.1.0",
   "private": true,
-  "main": "verifyAndShred.js",
+  "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "check": "node -e \"require('./verifyAndShred')\""
+    "start": "node server.js",
+    "check": "node -e \"require('./verifyAndShred'); require('./newsSourceVerification'); require('./videoService'); require('./videoRoutes'); require('./server')\""
   },
   "dependencies": {
+    "@mux/mux-node": "^12.8.1",
+    "express": "^4.21.2",
     "stripe": "^18.0.0"
   }
 }
